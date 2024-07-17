@@ -1,0 +1,377 @@
+const diets = [
+{
+name: 'Potato', protein: 2, carbs: 17, fat: 0.1, calories: 77, servingSize: '100g'
+},
+{
+name: 'Chickpeas (Chana)', protein: 19, carbs: 61, fat: 6, calories: 364, servingSize: '100g'
+},
+{
+name: 'Masoor Dal (Red Lentils)', protein: 9, carbs: 20, fat: 0.4, calories: 116, servingSize: '100g'
+},
+{
+name: 'Rajma (Kidney Beans)', protein: 9, carbs: 22, fat: 0.5, calories: 127, servingSize: '100g'
+},
+{
+name: 'Chana Dal', protein: 11, carbs: 27, fat: 3, calories: 160, servingSize: '100g'
+},
+{
+name: 'Bhindi (Okra)',
+protein: 1.9,
+carbs: 7,
+fat: 0.2,
+calories: 33,
+servingSize: '100g'
+},
+{
+name: 'Baingan (Eggplant)',
+protein: 1,
+carbs: 6,
+fat: 0.2,
+calories: 25,
+servingSize: '100g'
+},
+{
+name: 'Methi (Fenugreek Leaves)',
+protein: 4,
+carbs: 6,
+fat: 0.9,
+calories: 49,
+servingSize: '100g'
+},
+{
+name: 'Arhar Dal (Pigeon Pea)',
+protein: 22,
+carbs: 62,
+fat: 1.5,
+calories: 343,
+servingSize: '100g'
+},
+{
+name: 'Karela (Bitter Gourd)',
+protein: 1,
+carbs: 4.3,
+fat: 0.2,
+calories: 20,
+servingSize: '100g'
+},
+{
+name: 'Lauki (Bottle Gourd)',
+protein: 0.6,
+carbs: 3.4,
+fat: 0.1,
+calories: 15,
+servingSize: '100g'
+},
+{
+name: 'Paneer',
+protein: 18,
+carbs: 1.2,
+fat: 20,
+calories: 265,
+servingSize: '100g'
+},
+{
+name: 'Roti',
+protein: 3.1,
+carbs: 18,
+fat: 0.4,
+calories: 80,
+servingSize: '1 medium roti'
+},
+{
+name: 'Poha',
+protein: 2.4,
+carbs: 27,
+fat: 0.3,
+calories: 130,
+servingSize: '100g'
+},
+{
+name: 'Upma',
+protein: 3,
+carbs: 30,
+fat: 4,
+calories: 192,
+servingSize: '100g'
+},
+{
+name: 'Mango',
+protein: 0.8,
+carbs: 15,
+fat: 0.4,
+calories: 60,
+servingSize: '100g'
+},
+{
+name: 'Chicken Breast',
+protein: 31,
+carbs: 0,
+fat: 3.6,
+calories: 165,
+servingSize: '100g'
+},
+{
+name: 'Brown Rice',
+protein: 2.6,
+carbs: 23,
+fat: 0.9,
+calories: 111,
+servingSize: '100g'
+},
+{
+name: 'Broccoli',
+protein: 2.8,
+carbs: 6,
+fat: 0.4,
+calories: 34,
+servingSize: '100g'
+},
+{
+name: 'Salmon',
+protein: 20,
+carbs: 0,
+fat: 13,
+calories: 208,
+servingSize: '100g'
+},
+{
+name: 'Almonds',
+protein: 21,
+carbs: 22,
+fat: 49,
+calories: 579,
+servingSize: '100g'
+},
+{
+name: 'Greek Yogurt',
+protein: 10,
+carbs: 4,
+fat: 0.4,
+calories: 59,
+servingSize: '100g'
+},
+{
+name: 'Oats',
+protein: 16.9,
+carbs: 66.3,
+fat: 6.9,
+calories: 389,
+servingSize: '100g'
+},
+{
+name: 'Sweet Potato',
+protein: 2,
+carbs: 20,
+fat: 0.1,
+calories: 86,
+servingSize: '100g'
+},
+{
+name: 'Cottage Cheese',
+protein: 11,
+carbs: 3.4,
+fat: 4.3,
+calories: 98,
+servingSize: '100g'
+},
+{
+name: 'Banana',
+protein: 1.3,
+carbs: 23,
+fat: 0.3,
+calories: 96,
+servingSize: '100g'
+},
+{
+name: 'Avocado',
+protein: 2,
+carbs: 9,
+fat: 15,
+calories: 160,
+servingSize: '100g'
+},
+{
+name: 'Cauliflower',
+protein: 1.9,
+carbs: 5,
+fat: 0.3,
+calories: 25,
+servingSize: '100g'
+},
+{
+name: 'Carrot',
+protein: 0.6,
+carbs: 10,
+fat: 0.3,
+calories: 41,
+servingSize: '100g'
+},
+{
+name: 'Lentil Soup (Dal Tadka)',
+protein: 6,
+carbs: 10,
+fat: 3,
+calories: 79,
+servingSize: '100g'
+},
+{
+name: 'Spinach Curry (Palak Paneer)',
+protein: 4.6,
+carbs: 7,
+fat: 6,
+calories: 84,
+servingSize: '100g'
+},
+{
+name: 'Rice',
+protein: 2.7,
+carbs: 28,
+fat: 0.3,
+calories: 130,
+servingSize: '100g'
+},
+{
+name: 'Whole Wheat Bread (Roti)',
+protein: 8,
+carbs: 46,
+fat: 2,
+calories: 265,
+servingSize: '100g'
+},
+{
+name: 'Cucumber',
+protein: 0.6,
+carbs: 3.6,
+fat: 0.1,
+calories: 15,
+servingSize: '100g'
+},
+{
+name: 'Tomato',
+protein: 0.9,
+carbs: 3.9,
+fat: 0.2,
+calories: 18,
+servingSize: '100g'
+},
+{
+name: 'Apple',
+protein: 0.3,
+carbs: 14,
+fat: 0.2,
+calories: 52,
+servingSize: '100g'
+},
+{
+name: 'Blueberries',
+protein: 0.7,
+carbs: 14,
+fat: 0.3,
+calories: 57,
+servingSize: '100g'
+},
+{
+name: 'Cashews',
+protein: 18,
+carbs: 30,
+fat: 44,
+calories: 553,
+servingSize: '100g'
+},
+{
+name: 'Walnuts',
+protein: 15,
+carbs: 14,
+fat: 65,
+calories: 654,
+servingSize: '100g'
+},
+{
+name: 'Beef Steak',
+protein: 25,
+carbs: 0,
+fat: 19,
+calories: 271,
+servingSize: '100g'
+},
+{
+name: 'Shrimp',
+protein: 24,
+carbs: 0.2,
+fat: 0.3,
+calories: 99,
+servingSize: '100g'
+},
+{
+name: 'Tofu',
+protein: 8,
+carbs: 1.9,
+fat: 4.8,
+calories: 76,
+servingSize: '100g'
+},
+{
+name: 'Peanuts',
+protein: 25,
+carbs: 16,
+fat: 49,
+calories: 567,
+servingSize: '100g'
+},
+{
+name: 'Eggs',
+protein: 13,
+carbs: 1.1,
+fat: 11,
+calories: 155,
+servingSize: '100g'
+},
+{
+name: 'Mutton',
+protein: 25,
+carbs: 0,
+fat: 21,
+calories: 294,
+servingSize: '100g'
+},
+{
+name: 'Dosa',
+protein: 2.7,
+carbs: 17,
+fat: 4.5,
+calories: 97,
+servingSize: '100g'
+},
+{
+name: 'Idli',
+protein: 2.4,
+carbs: 14,
+fat: 0.4,
+calories: 58,
+servingSize: '1 idli'
+},
+{
+name: 'Sambar',
+protein: 2.7,
+carbs: 7.9,
+fat: 0.7,
+calories: 45,
+servingSize: '100g'
+},
+{
+name: 'Vegetable Salad',
+protein: 1.2,
+carbs: 4,
+fat: 0.2,
+calories: 20,
+servingSize: '100g'
+},
+{
+name: 'Raita',
+protein: 4,
+carbs: 6,
+fat: 2,
+calories: 55,
+servingSize: '100g'
+},
+];
